@@ -3,155 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NexusTech - Innovating the Future</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- Google Fonts: Inter -->
+    <title>Dhanya Shree - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts: Syne for large bold headings, Inter for clean body text -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-
-    <!-- Header Section -->
-    <header class="navbar">
-        <div class="container nav-container">
-            <div class="logo">Nexus<span>Tech</span></div>
-
-            <!-- CSS-Only Hamburger Menu -->
-            <input type="checkbox" id="nav-toggle" class="nav-toggle">
-            <label for="nav-toggle" class="nav-toggle-label">
-                <span></span>
-            </label>
-
-            <nav class="nav-menu">
-                <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#features">Features</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#about">About</a></li>
-                </ul>
-                <div class="nav-cta">
-                    <a href="#demo" class="btn btn-outline">Contact Us</a>
-                </div>
-            </nav>
-        </div>
+    <!-- 1. Navbar -->
+    <header>
+        <div class="logo">Dhanya.</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#services" class="active">Services</a></li>
+                <li><a href="#works">Works</a></li>
+                <li><a href="#blog">Blog</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="container hero-content">
-            <h1 class="hero-title">Shaping the Future of <span>Intelligence</span></h1>
-            <p class="hero-description">We build cutting-edge software solutions to accelerate your business growth. Discover the power of next-generation technology today.</p>
-            <a href="#demo" class="btn btn-primary">For Demo Click</a>
-        </div>
-    </section>
-
-    <!-- Features Section -->
-    <section id="features" class="features section">
-        <div class="container">
-            <div class="section-title">
-                <h2>Why Choose Us</h2>
-                <p>Discover the core features that make our platform stand out in the modern digital ecosystem.</p>
+    <main class="container">
+        <!-- 2. Hero Section (Main Highlight) & 3. Introduction Card -->
+        <section class="hero-section">
+            <div class="hero-content">
+                <div class="hero-text-block">
+                    <h1>Dhanya<br>Shree.</h1>
+                    <div class="accent-line"></div>
+                    <p class="role">IT Student & Web Developer</p>
+                </div>
             </div>
             
-            <div class="grid features-grid">
-                <!-- Card 1 -->
-                <div class="card">
-                    <div class="card-icon">🚀</div>
-                    <h3>Fast Performance</h3>
-                    <p>Experience lightning-fast speeds and optimized performance tailored for enterprise-scale operations. Zero latency, maximum output.</p>
+            <div class="hero-image-block">
+                <div class="image-wrapper">
+                    <!-- High quality portrait as placeholder -->
+                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Dhanya Shree">
                 </div>
-                <!-- Card 2 -->
-                <div class="card">
-                    <div class="card-icon">🔒</div>
-                    <h3>Secure by Design</h3>
-                    <p>Security is built into our core. Your data is protected by industry-leading encryption and robust compliance standards.</p>
-                </div>
-                <!-- Card 3 -->
-                <div class="card">
-                    <div class="card-icon">📈</div>
-                    <h3>Scalable Solutions</h3>
-                    <p>Grow without limits. Our flexible, modular infrastructure scales dynamically to meet your evolving business needs easily.</p>
+                <!-- Intro Card Overlap -->
+                <div class="intro-card">
+                    <h3>Product Designer<br>and Developer</h3>
+                    <p>I specialize in building clean, premium web applications with a focus on seamless user experiences and modern design aesthetics.</p>
+                    <a href="#works" class="btn-story">My Story &rarr;</a>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Services / About Section -->
-    <section id="services" class="services section bg-light">
-        <div class="container">
-            <div class="section-title">
-                <h2>Our Services</h2>
-                <p>Comprehensive technology solutions built specifically for modern and growing enterprises.</p>
+        <!-- 4. Stats Section -->
+        <section class="stats-section">
+            <div class="stat-item">
+                <h2>1<span>+</span></h2>
+                <p>Years of<br>Experience</p>
             </div>
+            <div class="stat-item">
+                <h2>15<span>+</span></h2>
+                <p>Projects<br>Completed</p>
+            </div>
+            <div class="stat-item">
+                <h2>3</h2>
+                <p>Core Skills<br>(HTML, CSS, Java)</p>
+            </div>
+        </section>
 
-            <div class="grid services-grid">
-                <div class="service-box">
-                    <h3>Cloud Architecture</h3>
-                    <p>We design, build, and seamlessly maintain robust cloud ecosystems that power your applications autonomously 24/7.</p>
+        <!-- 5. Services Section -->
+        <section id="services" class="services-section">
+            <div class="services-header">
+                <h2>My Services</h2>
+            </div>
+            <div class="services-grid">
+                <!-- Dark Card -->
+                <div class="service-card dark">
+                    <div class="service-icon">🌐</div>
+                    <h3>Web Developer</h3>
+                    <p>Creating responsive, functional, and modern websites using HTML, CSS, and interactive features to bring ideas to life.</p>
                 </div>
-                <div class="service-box">
-                    <h3>Machine Learning</h3>
-                    <p>Unlock the incredible potential of your data with our advanced AI integrations and machine learning solutions.</p>
+                <!-- Highlighted Active Yellow Card -->
+                <div class="service-card active-card">
+                    <div class="service-icon">✨</div>
+                    <h3>UI Designer</h3>
+                    <p>Designing minimal, clean, and premium user interfaces that provide seamless digital experiences and intuitive navigation.</p>
                 </div>
-                <div class="service-box">
-                    <h3>Web Development</h3>
-                    <p>Creating immersive, responsive, and highly functional web applications using strictly modern web practices and tools.</p>
-                </div>
-                <div class="service-box">
-                    <h3>Data Analytics</h3>
-                    <p>Transform raw, untouched data into clear, actionable insights with our comprehensive big-data platforms.</p>
+                <!-- Dark Card -->
+                <div class="service-card dark">
+                    <div class="service-icon">💻</div>
+                    <h3>Full Stack Developer</h3>
+                    <p>Learning and building end-to-end applications bridging the gap between visually appealing interfaces and solid logic.</p>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- CTA Section -->
-    <section id="demo" class="cta section">
-        <div class="container cta-container">
-            <h2>Ready to transform your business?</h2>
-            <p>Join hundreds of forward-thinking companies already building the future with NexusTech.</p>
-            <a href="#demo" class="btn btn-primary">Request Live Demo</a>
-        </div>
-    </section>
+        <!-- 6. Quote Section -->
+        <section class="quote-section">
+            <div class="quote-mark">"</div>
+            <p>"You can't use up creativity. The more you use, the more you have."</p>
+            <span class="quote-author">- Maya Angelou</span>
+        </section>
 
-    <!-- Footer -->
-    <footer id="about" class="footer">
-        <div class="container footer-grid">
-            <div class="footer-brand">
-                <div class="logo">Nexus<span>Tech</span></div>
-                <p>Building the modern web, one pixel at a time.</p>
+        <!-- 7. Contact Section -->
+        <section id="works" class="contact-section">
+            <div class="contact-box">
+                <h2>Any Type Of Query<br>& Discussion</h2>
+                <a href="mailto:dhanya@example.com" class="contact-btn">Let's Talk <span class="arrow">&nearr;</span></a>
             </div>
-            <div class="footer-links">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#features">Features</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#about">About</a></li>
-                </ul>
-            </div>
-            <div class="footer-contact">
-                <h3>Contact Us</h3>
-                <p>Email: hello@nexustech.io</p>
-                <p>Phone: +1 (555) 123-4567</p>
-                <p>Address: 123 Innovation Drive, Silicon Valley, CA, USA</p>
-            </div>
-            <div class="footer-social">
-                <h3>Follow Us</h3>
-                <div class="social-icons">
-                    <a href="#">Twitter/X</a>
-                    <a href="#">LinkedIn</a>
-                    <a href="#">GitHub</a>
-                    <a href="#">Instagram</a>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2026 NexusTech. All rights reserved.</p>
-            <p>Designed for learning and portfolio purposes.</p>
-        </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Dhanya Shree. Developed as an IT Student.</p>
     </footer>
-
 </body>
 </html>
